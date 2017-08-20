@@ -22,9 +22,8 @@
    You can use 'profile-tasks' like `production` and `development`
    to change parameters (like optimizations level of the cljs compiler)"
   []
-  (comp (speak)
-        
-        (cljs)
+  (comp (cljs)
+        (target :dir #{"target"})
         ))
 
 (deftask run
@@ -32,7 +31,7 @@
    useful tools for local development: an http server, a file watcher
    a ClojureScript REPL and a hot reloading mechanism"
   []
-  (comp (serve)
+  (comp (serve :dir "target")
         (watch)
         (cljs-repl)
         
