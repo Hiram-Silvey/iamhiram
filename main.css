@@ -1,3 +1,15 @@
 html {
   background-color: #e6e6ff;
 }
+.is-about {
+  background-color: #000055;
+  color: white;
+}
+.is-list {
+  background-color: #550000;
+  color: white;
+}
+.is-detail {
+  background-color: black;
+  color: white;
+}
