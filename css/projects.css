@@ -1,0 +1,19 @@
+.menu-list a {
+  color: #ffffff;
+}
+
+.project {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #leftMenu {
+    border-radius: 25px 25px 0px 0px !important;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #leftMenu {
+    border-radius: 25px 0px 0px 25px !important;
+  }
+}
