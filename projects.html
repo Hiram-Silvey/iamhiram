@@ -13,12 +13,19 @@
 <body>
     <nav class="navbar">
         <div class="container">
-            <div class="navbar-menu">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="http://iamhiram.com">
+                    [i am]
+                </a>
+                <div class="navbar-burger" data-target="navMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="navbar-menu" id="navMenu">
                 <div class="navbar-start">
-                    <a class="navbar-item" href="index.html">
-                        about
-                    </a>
-                    <a class="navbar-item is-active" href="projects.html">
+                    <a class="navbar-item" href="projects.html">
                         projects
                     </a>
                     <a class="navbar-item" href="music.html">
@@ -47,61 +54,61 @@
                     <aside class="menu">
                         <ul class="menu-list">
                             <li>
-                                <a onclick="makeVisible('arkade')">Arkade_delegate</a>
+                                <a class="project-link">Arkade_delegate</a>
                             </li>
                             <li>
-                                <a onclick="makeVisible('ink')">Ink</a>
+                                <a class="project-link">Ink</a>
                             </li>
                             <li>
-                                <a onclick="makeVisible('tortab')">TorTab</a>
+                                <a class="project-link">TorTab</a>
                             </li>
                             <li>
-                                <a onclick="makeVisible('simpli5')">Simpli5</a>
+                                <a class="project-link">Simpli5</a>
                             </li>
                             <li>
-                                <a onclick="makeVisible('eli5bot')">ELI5bot (Reddit)</a>
+                                <a class="project-link">ELI5bot (Reddit)</a>
                             </li>
                             <li>
-                                <a onclick="makeVisible('zorkbot')">Zork! Bot (Discord)</a>
+                                <a class="project-link">Zork! Bot (Discord)</a>
                             </li>
                             <li>
-                                <a onclick="makeVisible('twitchscraper')">TwitchScraper</a>
+                                <a class="project-link">TwitchScraper</a>
                             </li>
                             <li>
-                                <a onclick="makeVisible('servercomms')">Server-comms</a>
+                                <a class="project-link">Server-comms</a>
                             </li>
                             <li>
-                                <a onclick="makeVisible('iamhiram')">iamhiram</a>
+                                <a class="project-link">iamhiram</a>
                             </li>
                         </ul>
                     </aside>
                 </div>
                 <div class="column" style="background: white;">
-                    <div class="project" id="arkade" style="display: none;">
+                    <div class="project" style="display: none;">
                         arkade
                     </div>
-                    <div class="project" id="ink" style="display: none;">
+                    <div class="project" style="display: none;">
                         ink
                     </div>
-                    <div class="project" id="tortab" style="display: none;">
+                    <div class="project" style="display: none;">
                         tortab
                     </div>
-                    <div class="project" id="simpli5" style="display: none;">
+                    <div class="project" style="display: none;">
                         simpli5
                     </div>
-                    <div class="project" id="eli5bot" style="display: none;">
+                    <div class="project" style="display: none;">
                         eli5bot
                     </div>
-                    <div class="project" id="zorkbot" style="display: none;">
+                    <div class="project" style="display: none;">
                         zorkbot
                     </div>
-                    <div class="project" id="twitchscraper" style="display: none;">
+                    <div class="project" style="display: none;">
                         twitchscraper
                     </div>
-                    <div class="project" id="servercomms" style="display: none;">
+                    <div class="project" style="display: none;">
                         servercomms
                     </div>
-                    <div class="project" id="iamhiram" style="display: none;">
+                    <div class="project" style="display: none;">
                         iamhiram
                     </div>
                 </div>
@@ -109,5 +116,6 @@
         </div>
     </section>
     <script type="text/javascript" src="js/projects.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
 </body>
 </html>
