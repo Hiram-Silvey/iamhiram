@@ -3,7 +3,7 @@ html {
 }
 
 .primaryColor {
-  background-color: #400080;
+  background: linear-gradient(#400080, #6000BF);
 }
 
 .content {
