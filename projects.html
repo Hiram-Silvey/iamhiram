@@ -7,7 +7,6 @@
     <title>i am hiram</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
-    <link rel="stylesheet" type="text/css" href="css/projects.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
 </head>
 
@@ -18,11 +17,6 @@
                 <a class="navbar-item" href="http://iamhiram.com">
                     [i am]
                 </a>
-                <div class="navbar-burger" data-target="navMenu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
             </div>
             <div class="navbar-menu" id="navMenu">
                 <div class="navbar-start">
@@ -50,76 +44,8 @@
     </nav>
     <section class="section">
         <div class="container">
-            <div class="columns">
-                <div id="leftMenu" class="column is-one-quarter primaryColor">
-                    <aside class="menu">
-                        <ul class="menu-list">
-                            <li>
-                                <a class="project-link">ARK Delegate</a>
-                            </li>
-                            <li>
-                                <a class="project-link">Ink</a>
-                            </li>
-                            <li>
-                                <a class="project-link">TorTab</a>
-                            </li>
-                            <li>
-                                <a class="project-link">ELI5bot (Reddit)</a>
-                            </li>
-                            <li>
-                                <a class="project-link">ZorkBot (Discord)</a>
-                            </li>
-                            <li>
-                                <a class="project-link">TwitchScraper</a>
-                            </li>
-                            <li>
-                                <a class="project-link">iamhiram</a>
-                            </li>
-                            <li>
-                                <a class="project-link">HackUMass IV</a>
-                            </li>
-                        </ul>
-                    </aside>
-                </div>
-                <div class="column content">
-                    <div class="project">
-                        <blockquote cite="https://ark.io">
-                            ARK provides users, developers, and startups with innovative blockchain technologies. We aim to create an entire ecosystem of linked chains and a virtual spiderweb of endless use-cases that make ARK highly flexible, adaptable, and scalable. ARK is a secure platform designed for mass adoption and will deliver the services that consumers want and developers need.
-                            <br/><div align="right"><i>-Ark.io</i></div>
-                        </blockquote>
-                        ARK is a Delegated Proof-of-Stake (DPoS) cryptocurrency, where the effective "miners" (delegates) of the network are elected by the masses. Only the top 51 elected delegates are able to forge and validate new blocks for the blockchain.
-                        <br/>
-                        <a href="https://ark.io"><img class="image projectPic" src="media/ark.jpg"/></a>
-                        Several friends and I recently got together and wrote a delegate proposal, and shortly thereafter were elected into the top 51 delegates. We've since been forging and validating blocks on the ARK blockchain, and have been working on new features behind-the-scenes for our voters and the community. We are in favor of keeping our real identities hidden for now, so I won't go into too much detail on what exactly we are doing.<br/><br/>
-                        Generally speaking, though, we have been doing small modifications to the ARK source code (written in JavaScript) and have been learning more about the detailed implementation of cryptocurrencies. I recently started working on a server communication script in Go that can be used to automatically use backup servers when our main forging server becomes unstable. The initial code can be seen <a href="https://github.com/Hiram-Silvey/TinCans">here</a>. Using Nanomsg over SSH to send messages between the servers, the idea is that the main server will alert backup servers of its unstable state and a backup server will fill in while the main server repairs itself. This design works specifically for the problem when our main forging server gets out of sync with the blockchain and is able to detect that. Fortunately, that's the main problem we care about solving at this time. However, this design can be used in any system where either the main server can assess its own health or where another server can be the delegator of tasks and can observe each server's health remotely.<br/><br/>
-                        As we move forward as an ARK delegate, we will continue to make modifications to the ARK source code as we add special functionality, and we will continue developing stability tools for the backend as needed.
-                    </div>
-                    <div class="project">
-                        Source code: <a href="https://github.com/Hiram-Silvey/Ink">https://github.com/Hiram-Silvey/Ink</a><br/>Details coming soon...
-                    </div>
-                    <div class="project">
-                        Source code: <a href="https://github.com/adonisfamilia/TorTab">https://github.com/adonisfamilia/TorTab</a><br/>Details coming soon...
-                    </div>
-                    <div class="project">
-                        Source code: <a href="https://github.com/Hiram-Silvey/reddit-eli5bot">https://github.com/Hiram-Silvey/reddit-eli5bot</a><br/>Details coming soon...
-                    </div>
-                    <div class="project">
-                        Source code: <a href="https://github.com/Hiram-Silvey/zork-bot">https://github.com/Hiram-Silvey/zork-bot</a><br/>Details coming soon...
-                    </div>
-                    <div class="project">
-                        Source code: <a href="https://github.com/Hiram-Silvey/TwitchScraper">https://github.com/Hiram-Silvey/TwitchScraper</a><br/>Details coming soon...
-                    </div>
-                    <div class="project">
-                        Source code: <a href="https://github.com/Hiram-Silvey/Hiram-Silvey.github.io">https://github.com/Hiram-Silvey/Hiram-Silvey.github.io</a><br/>Details coming soon...
-                    </div>
-                    <div class="project">
-                        <iframe class="video" style="display: block; margin-left: auto; margin-right: auto;" width="560" height="315" src="https://www.youtube.com/embed/C6WZV9hk_CE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br/>Details coming soon...
-                    </div>
-                </div>
-            </div>
+            redesign coming soon
         </div>
     </section>
-    <script type="text/javascript" src="js/projects.js"></script>
-    <script type="text/javascript" src="js/nav.js"></script>
 </body>
 </html>
